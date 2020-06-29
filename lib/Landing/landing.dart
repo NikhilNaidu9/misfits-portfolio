@@ -25,9 +25,9 @@ class DesktopLanding extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           buildNikhilCard('Nikhil Naidu', 'Developer', skills, context),
-          buildNikhilCard('Nikhil Naidu', 'Developer', skills, context),
-          buildNikhilCard('Nikhil Naidu', 'Developer', skills, context),
-          buildNikhilCard('Nikhil Naidu', 'Developer', skills, context),
+          buildNikhilCard('Akash Tripathi', 'Developer', skills, context),
+          buildNikhilCard('Praveen Choudhary', 'Developer', skills, context),
+          buildNikhilCard('Vinayak Garudi', 'Developer', skills, context),
         ],
       ),
     );
