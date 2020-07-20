@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:misfitswebsite/Education/education.dart';
+import 'package:misfitswebsite/Goals/goals.dart';
 import 'package:misfitswebsite/Landing/landing.dart';
 import 'package:misfitswebsite/Navbar/navbar.dart';
+import 'package:misfitswebsite/Skills/skills.dart';
+
+import 'Achievements/achievements.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +21,13 @@ class MyApp extends StatelessWidget {
       theme:
           ThemeData(fontFamily: "BebasNeue", primaryColor: Colors.greenAccent),
       home: MyHomePage(),
+      routes: <String, WidgetBuilder>{
+        '/home': (BuildContext context) => new MyApp(),
+        '/education': (BuildContext context) => new EducationPage(),
+        '/skills': (BuildContext context) => new SkillsPage(),
+        '/achievements': (BuildContext context) => new AchievementPage(),
+        '/goals': (BuildContext context) => new GoalsPage(),
+      },
     );
   }
 }

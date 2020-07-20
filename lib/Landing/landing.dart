@@ -25,9 +25,6 @@ class DesktopLanding extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           buildNikhilCard('Nikhil Naidu', 'Developer', skills, context),
-          buildNikhilCard('Akash Tripathi', 'Developer', skills, context),
-          buildNikhilCard('Praveen Choudhary', 'Developer', skills, context),
-          buildNikhilCard('Vinayak Garudi', 'Developer', skills, context),
         ],
       ),
     );
@@ -42,7 +39,7 @@ Widget buildNikhilCard(
     width: width,
     height: height,
     child: Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -254,14 +251,11 @@ Widget buildNikhilCard(
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
-                                  color: Colors.black87,
-                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
-                                      image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/linkedin.png'),
+                                      image: AssetImage('assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -277,38 +271,11 @@ Widget buildNikhilCard(
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
-                                  color: Colors.black87,
-                                  borderRadius: BorderRadius.circular(15.0),
                                   image: DecorationImage(
-                                      image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/twitter.png'),
-                                      fit: BoxFit.cover)),
-                            )),
-                        SizedBox(
-                          height: 20.0,
-                        ),
-                        InkWell(
-                            onTap: () async {
-                              const url =
-                                  'https://www.youtube.com/channel/UCGF8TZgxizDN3MDSulUP5bg';
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
-                            child: Container(
-                              width: 50.0,
-                              height: 50.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.black87,
-                                  borderRadius: BorderRadius.circular(18.0),
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/youtube.png'),
+                                      image: AssetImage('assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -325,14 +292,11 @@ Widget buildNikhilCard(
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
-                                  color: Colors.black87,
-                                  borderRadius: BorderRadius.circular(18.0),
                                   image: DecorationImage(
-                                      image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/insta.png'),
+                                      image: AssetImage('assets/instagram.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -366,16 +330,22 @@ Widget buildNikhilCard(
             ),
           ],
         ),
+        SizedBox(
+          height: 50.0,
+        ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"Dont\'t wish for it. Work for it"',
-            style: TextStyle(color: Colors.black87, fontSize: 40.0),
+            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            style: TextStyle(color: Colors.black, fontSize: 36.0),
           ),
+        ),
+        SizedBox(
+          height: 10.0,
         ),
         Container(
           height: 2.0,
-          width: width - 50,
+          width: width - 150,
           decoration: BoxDecoration(color: Colors.green),
         )
       ],

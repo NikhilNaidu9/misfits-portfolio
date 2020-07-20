@@ -21,33 +21,89 @@ class DesktopNavbar extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 40, horizontal: 100),
+      padding: EdgeInsets.fromLTRB(100.0, 10.0, 100.0, 10.0),
       child: Column(
         children: [
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             InkWell(
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/home');
+              },
+              child: Container(
+                child: Icon(
+                  Icons.person,
+                  color: Colors.green,
+                  size: 27.0,
+                ),
+              ),
+            ),
+            Container(
               child: Row(
                 children: [
-                  FlutterLogo(
-                    colors: Colors.green,
-                    size: 40.0,
+                  InkWell(
+                    child: Text(
+                      'Education',
+                      style: TextStyle(
+                        color: Colors.green,
+                        fontSize: 27.0,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed('/education');
+                    },
                   ),
                   SizedBox(
                     width: 20.0,
                   ),
-                  Text(
-                    'MISFITS',
-                    style: TextStyle(
-                      color: Colors.green,
-                      fontSize: 34.0,
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed('/skills');
+                    },
+                    child: Text(
+                      'Skills',
+                      style: TextStyle(
+                        color: Colors.green,
+                        fontSize: 27.0,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed('/achievements');
+                    },
+                    child: Text(
+                      'Achievements',
+                      style: TextStyle(
+                        color: Colors.green,
+                        fontSize: 27.0,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed('/goals');
+                    },
+                    child: Text(
+                      'Goals',
+                      style: TextStyle(
+                        color: Colors.green,
+                        fontSize: 27.0,
+                      ),
                     ),
                   ),
                 ],
               ),
-            ),
+            )
           ]),
           SizedBox(
-            height: 20.0,
+            height: 10.0,
           ),
           Container(
             height: 2.0,
@@ -66,28 +122,30 @@ class PhoneNavbar extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       child: Column(
         children: [
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             InkWell(
-              child: Row(
-                children: [
-                  FlutterLogo(
-                    colors: Colors.green,
-                    size: 40.0,
-                  ),
-                  SizedBox(
-                    width: 20.0,
-                  ),
-                  Text(
-                    'MISFITS',
-                    style: TextStyle(
-                      color: Colors.green,
-                      fontSize: 34.0,
+              child: Container(
+                child: Row(
+                  children: [
+                    FlutterLogo(
+                      colors: Colors.green,
+                      size: 40.0,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    Text(
+                      'Nikhil Naidu',
+                      style: TextStyle(
+                        color: Colors.green,
+                        fontSize: 34.0,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ]),
