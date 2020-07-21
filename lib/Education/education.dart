@@ -64,7 +64,8 @@ class DesktopEducation extends StatelessWidget {
                     width: 250.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/school.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/school.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -111,7 +112,8 @@ class DesktopEducation extends StatelessWidget {
                     width: 250.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/school.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/school.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -158,7 +160,8 @@ class DesktopEducation extends StatelessWidget {
                     width: 250.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/student.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/student%20(1).png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(

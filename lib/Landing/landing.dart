@@ -255,7 +255,8 @@ Widget buildNikhilCard(
                               height: 40.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/linkedin.png'),
+                                      image: NetworkImage(
+                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -275,7 +276,8 @@ Widget buildNikhilCard(
                               height: 40.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/twitter.png'),
+                                      image: NetworkImage(
+                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -296,7 +298,8 @@ Widget buildNikhilCard(
                               height: 40.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/instagram.png'),
+                                      image: NetworkImage(
+                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(

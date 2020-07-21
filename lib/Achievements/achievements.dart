@@ -59,7 +59,7 @@ class DesktopAchievement extends StatelessWidget {
             child: ListView(
               children: [
                 buildAchievementCard(
-                    'assets/technex.jpg',
+                    'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/technex.jpg',
                     'IIT Varanasi Technex 2019',
                     'Crop Disease Detection using Drone and Computer Vision',
                     'First in One Theme',
@@ -70,7 +70,7 @@ class DesktopAchievement extends StatelessWidget {
                   height: 50.0,
                 ),
                 buildAchievementCard(
-                    'assets/hack.jpg',
+                    'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/hack.jpg',
                     'Smart India Hackathon 2019',
                     'Real Time Traffic Management using Computer Vision',
                     'Participants: 2,10,000 Teams',
@@ -81,7 +81,7 @@ class DesktopAchievement extends StatelessWidget {
                   height: 50.0,
                 ),
                 buildAchievementCard(
-                    'assets/eyantra.jpg',
+                    'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/eyantra.jpg',
                     'Eyantra Idea Competition 2019',
                     'Real Time Traffic Management/ Monitoring System \nfor Emergency Vehicles',
                     'Participant: 5090 Participants',
@@ -92,7 +92,7 @@ class DesktopAchievement extends StatelessWidget {
                   height: 50.0,
                 ),
                 buildAchievementCard(
-                    'assets/hack20.png',
+                    'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/hack20.png',
                     'Smart India Hackathon 2020',
                     'Electronic Health Record Using Blockchain Technology',
                     'College Level Competition',
@@ -116,7 +116,7 @@ class DesktopAchievement extends StatelessWidget {
                   height: 50.0,
                 ),
                 buildAchievementCard(
-                    'assets/yourstory.png',
+                    'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/yourstory.png',
                     'Covered by YourStory',
                     "YourStory.com is India's biggest and definitive",
                     'platform for startups and ',
@@ -127,12 +127,24 @@ class DesktopAchievement extends StatelessWidget {
                   height: 50.0,
                 ),
                 buildAchievementCard(
-                    'assets/tv.jpg', 'Aired on national tv', "", '', '', '', 0),
+                    'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/tv.jpg',
+                    'Aired on national tv',
+                    "",
+                    '',
+                    '',
+                    '',
+                    0),
                 SizedBox(
                   height: 50.0,
                 ),
-                buildAchievementCard('assets/newspaper.jpg',
-                    'Covered by Newspapers', "", '', '', '', 1),
+                buildAchievementCard(
+                    'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/newspaper.jpg',
+                    'Covered by Newspapers',
+                    "",
+                    '',
+                    '',
+                    '',
+                    1),
               ],
             ),
           )
@@ -155,7 +167,7 @@ Widget buildAchievementCard(String imagePath, String competitionName,
                   color: Colors.green, width: 4.0, style: BorderStyle.solid),
               borderRadius: BorderRadius.circular(20.0),
               image: DecorationImage(
-                  image: AssetImage(imagePath),
+                  image: NetworkImage(imagePath),
                   fit: a == 1 ? BoxFit.fill : BoxFit.cover)),
         ),
         SizedBox(

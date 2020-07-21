@@ -63,7 +63,8 @@ class DesktopGoals extends StatelessWidget {
                     width: 250.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/book.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/book.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -95,7 +96,8 @@ class DesktopGoals extends StatelessWidget {
                     width: 250.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/suit.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/suit.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(

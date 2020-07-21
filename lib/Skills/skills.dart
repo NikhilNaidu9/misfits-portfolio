@@ -64,7 +64,8 @@ class DesktopSkills extends StatelessWidget {
                     width: 200.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/nlp.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/nlp.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -86,7 +87,8 @@ class DesktopSkills extends StatelessWidget {
                     width: 200.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/team.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/team.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -108,7 +110,8 @@ class DesktopSkills extends StatelessWidget {
                     width: 200.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/determination.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/determination.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -130,7 +133,8 @@ class DesktopSkills extends StatelessWidget {
                     width: 200.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/decision-making.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/decision-making.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -152,7 +156,8 @@ class DesktopSkills extends StatelessWidget {
                     width: 200.0,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/workaholic.png'),
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/workaholic.png'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
